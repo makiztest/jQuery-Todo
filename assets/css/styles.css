@@ -1,5 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background: #DE6262;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 h1 {
@@ -27,10 +30,24 @@ li {
     padding-left: 20px; 
 }
 
-/* change bkg of every other li */
-/* :nth-child(2n) "2n means every other" */
 li:nth-child(2n) {
     background: #f7f7f7;    
+}
+
+/* the input size is over the div use box-sizing: border-box  */
+input {
+    font-size: 18px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 12px 13px 12px 20px;
+    box-sizing: border-box;
+    color: steelblue;
+}
+
+input:focus {
+    background: white;
+    border: 2px solid steelblue;
+    outline: none;
 }
 
 #container {
