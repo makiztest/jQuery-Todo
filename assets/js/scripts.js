@@ -4,7 +4,11 @@ $("li").click(function() {
 
 //use .stopPropagation() to stop bubbling
 $("span").click(function(e) {
-    //add fadeout effect
-    $(this).parent().fadeOut();
+    //deleted lishould be deleted not display: none
+    //add callback function to remove li with nice fadeOut effect
+    $(this).parent().fadeOut(function() {
+        //"this" is now referring to the parent element "li" not "span"
+        $(this).remove();
+    });
     e.stopPropagation();
 })
