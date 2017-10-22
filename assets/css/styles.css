@@ -14,6 +14,18 @@ h1 {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: white;
+}
+
+/* change bkg of every other li */
+/* :nth-child(2n) "2n means every other" */
+li:nth-child(2n) {
+    background: #f7f7f7;    
 }
 
 #container {
