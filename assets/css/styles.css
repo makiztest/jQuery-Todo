@@ -10,6 +10,7 @@ h1 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
+    text-align: center;
 }
 
 ul {
@@ -20,6 +21,10 @@ ul {
 
 li {
     background: white;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px; 
 }
 
 /* change bkg of every other li */
