@@ -1,8 +1,10 @@
-$("li").click(function() {
+//add the eventlistener to the parent "ul"
+//.on() only listen on the event that exist when the page loads
+$("ul").on("click", "li", function() {
     $(this).toggleClass("completed")
 })
 
-$("span").click(function(e) {
+$("ul").on("click", "span", function(e) {
     $(this).parent().fadeOut(function() {
         $(this).remove();
     });
@@ -12,8 +14,7 @@ $("span").click(function(e) {
 $("input[type='text']").keypress(function(e) {
     if(e.which === 13) {
         var newTodo = $(this).val();
-        //set as a setter. put an empty string in the input
-        $(this).val("")
-        $("ul").append("<li>" + newTodo + "</li>")
+        $(this).val("");
+        $("ul").append("<li><span>X</span> " + newTodo + "</li>")
     }
 })
