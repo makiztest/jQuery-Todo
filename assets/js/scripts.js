@@ -9,7 +9,12 @@ $("span").click(function(e) {
     e.stopPropagation();
 })
 
-//get text input when keypress
 $("input[type='text']").keypress(function(e) {
-    console.log(e)
+    //if keypress is equal to enter
+    if(e.which === 13) {
+        //grab a new todo text
+        var newTodo = $(this).val();
+        //create a new li and add to ul
+        $("ul").append("<li>" + newTodo + "</li>")
+    }
 })
