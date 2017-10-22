@@ -4,7 +4,7 @@ $("li").click(function() {
 
 //use .stopPropagation() to stop bubbling
 $("span").click(function(e) {
-    //remove selected li when click X
-    $(this).parent().remove();
+    //add fadeout effect
+    $(this).parent().fadeOut();
     e.stopPropagation();
 })
