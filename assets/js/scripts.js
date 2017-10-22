@@ -4,6 +4,7 @@ $("li").click(function() {
 
 //use .stopPropagation() to stop bubbling
 $("span").click(function(e) {
-    alert("click")
+    //remove selected li when click X
+    $(this).parent().remove();
     e.stopPropagation();
 })
