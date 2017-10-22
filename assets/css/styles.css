@@ -4,3 +4,8 @@
     border: 1px solid gray;
     padding: 10px;
 }
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
