@@ -30,11 +30,20 @@ li {
     color: #666;
     height: 40px;
     line-height: 40px;
-    padding-left: 20px; 
 }
 
 li:nth-child(2n) {
     background: #f7f7f7;    
+}
+
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 40px;
+    display: inline-block;
 }
 
 /* the input size is over the div use box-sizing: border-box  */
