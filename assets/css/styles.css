@@ -42,8 +42,17 @@ span {
     margin-right: 20px;
     text-align: center;
     color: white;
-    width: 40px;
+    width: 0;
     display: inline-block;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
 }
 
 /* the input size is over the div use box-sizing: border-box  */
@@ -54,6 +63,7 @@ input {
     padding: 12px 13px 12px 20px;
     box-sizing: border-box;
     color: steelblue;
+    border: 2px solid rgba(0, 0, 0, 0)
 }
 
 input:focus {
